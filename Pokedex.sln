@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex", "Pokedex.csproj", "{FA801979-2851-45C8-8E11-074A26AF8511}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex", "Pokedex.csproj", "{1B1E299F-FE5B-47AC-8330-81E71616A66B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA801979-2851-45C8-8E11-074A26AF8511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA801979-2851-45C8-8E11-074A26AF8511}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA801979-2851-45C8-8E11-074A26AF8511}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA801979-2851-45C8-8E11-074A26AF8511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1E299F-FE5B-47AC-8330-81E71616A66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1E299F-FE5B-47AC-8330-81E71616A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1E299F-FE5B-47AC-8330-81E71616A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1E299F-FE5B-47AC-8330-81E71616A66B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FFD354DB-F580-44BB-AA8F-EDF7A92934B5}
+		SolutionGuid = {AFC0F471-43AB-47A2-958C-F8E6CC42AC4D}
 	EndGlobalSection
 EndGlobal
