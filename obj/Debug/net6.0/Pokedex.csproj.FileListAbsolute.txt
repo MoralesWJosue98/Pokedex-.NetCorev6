@@ -1,5 +1,3 @@
-C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\appsettings.json
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\Pokedex.staticwebassets.runtime.json
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\Pokedex.exe
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\Pokedex.deps.json
@@ -21,7 +19,6 @@ C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\staticw
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\scopedcss\bundle\Pokedex.styles.css
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\scopedcss\projectbundle\Pokedex.bundle.scp.css
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\Pokedex.dll
@@ -29,3 +26,6 @@ C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\refint\
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\Pokedex.pdb
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\Pokedex.genruntimeconfig.cache
 C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\ref\Pokedex.dll
+C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\bin\Debug\net6.0\appsettings.json
+C:\Users\wilfr\Documents\.NET CORE Applications\Pokedex\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

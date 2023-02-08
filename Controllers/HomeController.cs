@@ -2,7 +2,7 @@
 using Pokedex.Models;
 using System.Diagnostics;
 
-namespace Pokedex.Controllers
+namespace Pokedex.Pokedex.Controllers
 {
     public class HomeController : Controller
     {
