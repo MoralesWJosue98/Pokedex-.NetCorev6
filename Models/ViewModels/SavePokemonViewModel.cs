@@ -19,7 +19,7 @@ namespace Pokedex.Models.ViewModels
         public int SecondaryType { get; set; }
 
         [Required(ErrorMessage = "**")]
-        public int RegionId { get; set; }
+        public int RegionID { get; set; }
         public int Id { get; set; }
     }
 }

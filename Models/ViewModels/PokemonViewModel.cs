@@ -7,7 +7,7 @@
         public String ImgUrl { get; set; }
         public int PrimaryType { get; set; }
         public int SecondaryType { get; set; }
-        public int RegionId { get; set; }
+        public int RegionID { get; set; }
         public int Id { get; set; }
     }
 }
