@@ -13,39 +13,39 @@ namespace Pokedex.Repository
         }
 
         // Add Pokemon Region
-        public async Task AddAsync(Pokemon pokemon)
+        public async Task AddAsync(Region pokemonRegion)
         {
-            await _dbContext.Set<Pokemon>().AddAsync(pokemon);
+            await _dbContext.Set<Region>().AddAsync(pokemonRegion);
             await _dbContext.SaveChangesAsync();
         }
 
         // Update Pokemon Region
-        public async Task UpdateAsync(Pokemon pokemon)
+        public async Task UpdateAsync(Region pokemonRegion)
         {
-            _dbContext.Entry(pokemon).State = EntityState.Modified;
+            _dbContext.Entry(pokemonRegion).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
 
         // Delete Pokemon Region
-        public async Task DeleteAsync(Pokemon pokemon)
+        public async Task DeleteAsync(Region pokemonRegion)
         {
-            _dbContext.Set<Pokemon>().Remove(pokemon);
+            _dbContext.Set<Region>().Remove(pokemonRegion);
             await _dbContext.SaveChangesAsync();
         }
 
         // Get all Pokemons Regions
-        public async Task<List<Pokemon>> GetAllAsync()
+        public async Task<List<Region>> GetAllAsync()
         {
             return await _dbContext
-                .Set<Pokemon>()
+                .Set<Region>()
                 .ToListAsync();
         }
 
         // Get Pokemon Region by ID
-        public async Task<Pokemon> GetByIdAsync(int id)
+        public async Task<Region> GetByIdAsync(int id)
         {
             return await _dbContext
-                .Set<Pokemon>()
+                .Set<Region>()
                 .FindAsync(id);
         }
     }

@@ -14,28 +14,32 @@ namespace Pokedex.Service
         }
         public async Task addService(SavePokemonViewModel savePokemon)
         {
-            Pokemon pokemon = new();
-            pokemon.Id = savePokemon.Id;
-            pokemon.Name = savePokemon.Name;
-            pokemon.Description = savePokemon.Description;
-            pokemon.ImgUrl = savePokemon.ImgUrl;
-            pokemon.PrimaryType = savePokemon.PrimaryType;
-            pokemon.SecondaryType = savePokemon.SecondaryType;
-            pokemon.RegionID = savePokemon.RegionID;
+            Pokemon pokemon = new()
+            {
+                Id = savePokemon.Id,
+                Name = savePokemon.Name,
+                Description = savePokemon.Description,
+                ImgUrl = savePokemon.ImgUrl,
+                PrimaryType = savePokemon.PrimaryType,
+                SecondaryType = savePokemon.SecondaryType,
+                RegionID = savePokemon.RegionID
+            };
 
             await _repository.AddAsync(pokemon);
         }
 
         public async Task updateService(SavePokemonViewModel savePokemon)
         {
-            Pokemon pokemon = new();
-            pokemon.Id = savePokemon.Id;
-            pokemon.Name = savePokemon.Name;
-            pokemon.Description = savePokemon.Description;
-            pokemon.ImgUrl = savePokemon.ImgUrl;
-            pokemon.PrimaryType = savePokemon.PrimaryType;
-            pokemon.SecondaryType = savePokemon.SecondaryType;
-            pokemon.RegionID = savePokemon.RegionID;
+            Pokemon pokemon = new()
+            {
+                Id = savePokemon.Id,
+                Name = savePokemon.Name,
+                Description = savePokemon.Description,
+                ImgUrl = savePokemon.ImgUrl,
+                PrimaryType = savePokemon.PrimaryType,
+                SecondaryType = savePokemon.SecondaryType,
+                RegionID = savePokemon.RegionID
+            };
 
             await _repository.UpdateAsync(pokemon);
         }
@@ -49,16 +53,34 @@ namespace Pokedex.Service
         public async Task<SavePokemonViewModel> getPokemonByIdService(int id)
         {
             var pokemon = await _repository.GetByIdAsync(id);
-            SavePokemonViewModel savePokemon = new();
-            savePokemon.Id = pokemon.Id;
-            savePokemon.Name = pokemon.Name;
-            savePokemon.Description = pokemon.Description;
-            savePokemon.ImgUrl = pokemon.ImgUrl;
-            savePokemon.PrimaryType = pokemon.PrimaryType;
-            savePokemon.SecondaryType = pokemon.SecondaryType;
-            savePokemon.RegionID = pokemon.RegionID;
+            SavePokemonViewModel savePokemon = new()
+            {
+                Id = pokemon.Id,
+                Name = pokemon.Name,
+                Description = pokemon.Description,
+                ImgUrl = pokemon.ImgUrl,
+                PrimaryType = pokemon.PrimaryType,
+                SecondaryType = pokemon.SecondaryType,
+                RegionID = pokemon.RegionID
+            };
 
-            return vm;
+            return savePokemon;
+        }
+
+        public async Task<List<SavePokemonViewModel>> getAllService()
+        {
+            var pokemonList = await _repository.GetAllAsync();
+            return pokemonList.Select(s => new SavePokemonViewModel
+            {
+                Name = s.Name,
+                Description = s.Description,
+                Id = s.Id,
+                PrimaryType = s.PrimaryType,
+                SecondaryType = s.SecondaryType,
+                RegionID = s.RegionID,
+                ImgUrl = s.ImgUrl
+
+            }).ToList();
         }
     }
 }
